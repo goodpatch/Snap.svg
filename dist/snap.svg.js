@@ -4722,12 +4722,13 @@ Snap.plugin(function (Snap, Element, Paper, glob, Fragment) {
                 set.width = width;
                 set.height = height;
             } else {
-                preload(src, function () {
-                    Snap._.$(el.node, {
-                        width: this.offsetWidth,
-                        height: this.offsetHeight
-                    });
-                });
+                // comment out for Prott
+                // preload(src, function () {
+                //     Snap._.$(el.node, {
+                //         width: this.offsetWidth,
+                //         height: this.offsetHeight
+                //     });
+                // });
             }
             Snap._.$(el.node, set);
         }
